@@ -20,9 +20,13 @@ console.log("Server is listening on PORT 3000")
 ```
 ___and then we committed our code___
 
-`git add -A`
-`git commit -m "configured basic server using HTTP"`
-`git push origin master`
+`git add -A`: telling git we're gonna add something
+
+`git commit -m "configured basic server using HTTP"`: adding a name to the commit
+
+`git push origin master`: upload the file!
+
+you can then pull from github with `git pull origin master`.
 
 -----
 ### Second commit: Express
