@@ -71,7 +71,7 @@ Up until now we have to kill our server, and restart our server to see our new c
 
 `sudo npm install -g nodemon`
 
-*the dash g flag tells NPM to install nodemon globally on our computer, meaning this is not specific to this project. When we install things globally, it's a pretty big deal, so we need to prefix the command with sudo*
+*the dash g flag tells NPM to install nodemon globally on our computer, meaning this is not specific to this project. When we install things globally, it's a pretty big deal, so we need to prefix the command with sudo(basically running as administrator)*
 
 Now we can start our server with `nodemon` and our server will automatically restart every time we save our codebase.
 
@@ -119,3 +119,30 @@ require it in your `server.js`
 `nodemon server.js`
 
 4) Head to Postman to test your endpoint `localhost:3000/login` (don't forget to select x-www-form-urlencoded)
+
+### Sixth commit: EJS (Embedded JavaScript)
+
+Initially we will have node server up `ejs` files that will look exactly like HTML. Eventually we will dynamically render variables and data right inside of our HTML, this is why its' called a `templating engine`.
+
+1)Install EJS:
+
+`npm install ---save ejs`
+
+2) Tell `server.js` to use ejs:
+
+`app.set('view engine', 'ejs');`
+
+Next we have to create an ejs page (remembering that our ejs page will be roughly equivalent to an html page.) EJS pages are required to live in the `views/` directory.
+
+3) `mkdir view`
+
+4) `touch index.ejs` -> go and add base HTML to this file.
+
+5) Create a route that serves (renders) our `index.ejs` page.
+```js
+app.get('/', function(req, res){
+  res.render('index');
+});
+```
+
+6) Start your server and go to localhost:3000
