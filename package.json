@@ -1,0 +1,26 @@
+{
+  "name": "intro_to_node",
+  "version": "1.0.0",
+  "description": "learn node code along",
+  "main": "server.js",
+  "scripts": {
+    "test": "hello",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johotpocket/node_intro_css.git"
+  },
+  "keywords": [
+    "learn"
+  ],
+  "author": "Alex Murray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johotpocket/node_intro_css/issues"
+  },
+  "homepage": "https://github.com/johotpocket/node_intro_css#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

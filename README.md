@@ -24,3 +24,10 @@ ___and then we committed our code___
 `git push origin master`
 
 -----
+### Second commit
+We are making our project a node project by adding a `package.json` file.
+
+Run command `npm init` to create the JSON file.
+
+Next, we installed the NPM package `express`
+___the dash dash save, writes express to our package.json___
