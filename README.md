@@ -3,9 +3,9 @@
 Learning node by doing, and keeping track of it with github
 
 -----
-### First Commit
+### First Commit: HTTP module
 Using the node module `http`, to create a very simple node server. run `node server.js` to start a server on port 3000.
-```
+```g
 var http = require('http');
 
 http.createServer(function(request, response){
@@ -23,7 +23,7 @@ ___and then we committed our code___
 `git push origin master`
 
 -----
-### Second commit
+### Second commit: Express
 We are making our project a node project by adding a `package.json` file.
 
 Run command `npm init` to create the JSON file.
@@ -60,7 +60,7 @@ Then we committed our code
 3)push your changes to Github
 
 ---
-###Third commit
+### Third commit: Nodemon
 Up until now we have to kill our server, and restart our server to see our new changes in our code. We can use a tool called `nodemon` that will make this process much easier.
 
 `sudo npm install -g nodemon`
@@ -70,3 +70,20 @@ Up until now we have to kill our server, and restart our server to see our new c
 Now we can start our server with `nodemon` and our server will automatically restart every time we save our codebase.
 
 `nodemon server.js` is the command we use to launch our server using nodemon.
+
+---
+### Fourth commit: Parameters (Params)
+We can create functions that can take a parameter:
+```
+function greeting(name){
+  return "Hello " + name
+}
+```
+We have this same ability when we define API endpoints:
+```
+app.get(/greeting/:name, function(req, res){
+  res.send("How are you " + req.params.name)
+  });
+```
+
+Add this endpoint to `server.js`, and pass in a value for the name param.
