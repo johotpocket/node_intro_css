@@ -31,3 +31,24 @@ Run command `npm init` to create the JSON file.
 
 Next, we installed the NPM package `express`
 ___the dash dash save, writes express to our package.json___
+
+1) Imported express and used the constructor to make our app.
+2) Defined an endpoint 'howdy', which gives a response of some text.
+3) Created a server on PORT 3000
+
+```
+var http = require('http');
+
+http.createServer(function(request, response){
+  response.writeHead(200, { 'Content-Type': 'text/plain'});
+  response.end("hello world")
+}).listen(3000);
+
+console.log("Server is listening on PORT 3000")
+```
+Then we committed our code
+`git add -A`
+`git commit -m "Add package.json, user express to configure our server"`
+`git push origin master`
+
+-----
