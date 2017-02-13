@@ -1,5 +1,7 @@
 ### Introduction to Node
 
+Learn node in this linear code along. It explores HTTP, express, params, posting data, and EJS templating engine.
+
 Learning node by doing, and keeping track of it with github
 
 -----
